@@ -31,11 +31,11 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V3          = 11;
 
 // MONEY_SUPPLY - total number coins to be generatec
 const uint64_t MONEY_SUPPLY                                  = UINT64_C(12000000000);
-const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX                   = 187000;
+const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX                   = 0;
 const size_t ZAWY_DIFFICULTY_V2                              = 0;
 const uint8_t ZAWY_DIFFICULTY_DIFFICULTY_BLOCK_VERSION       = 3;
 
-const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX                 = 620000;
+const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX                 = 3;
 const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V2              = 700000;
 
 const uint64_t DIFFICULTY_WINDOW_V3                          = 60;
@@ -79,12 +79,12 @@ const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 2;
 const uint64_t MINIMUM_FEE                                   = UINT64_C(10);
 
 const uint64_t MINIMUM_MIXIN_V1                              = 0;
-const uint64_t MAXIMUM_MIXIN_V1                              = 100;
+const uint64_t MAXIMUM_MIXIN_V1                              = 15;
 const uint64_t MINIMUM_MIXIN_V2                              = 7;
 const uint64_t MAXIMUM_MIXIN_V2                              = 7;
 
-const uint32_t MIXIN_LIMITS_V1_HEIGHT                        = 440000;
-const uint32_t MIXIN_LIMITS_V2_HEIGHT                        = 620000;
+const uint32_t MIXIN_LIMITS_V1_HEIGHT                        = 0;
+const uint32_t MIXIN_LIMITS_V2_HEIGHT                        = 1;
 
 const uint64_t DEFAULT_MIXIN                                 = MINIMUM_MIXIN_V2;
 
@@ -92,7 +92,7 @@ const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(10);
 const uint64_t DEFAULT_DUST_THRESHOLD_V2                     = UINT64_C(0);
 
 const uint32_t DUST_THRESHOLD_V2_HEIGHT                      = MIXIN_LIMITS_V2_HEIGHT;
-const uint32_t FUSION_DUST_THRESHOLD_HEIGHT_V2               = 800000;
+const uint32_t FUSION_DUST_THRESHOLD_HEIGHT_V2               = 0;
 
 const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DIFFICULTY_TARGET;
 const size_t   DIFFICULTY_WINDOW                             = 17;
@@ -125,7 +125,7 @@ const size_t   FUSION_TX_MIN_IN_OUT_COUNT_RATIO              = 4;
 const uint32_t KEY_IMAGE_CHECKING_BLOCK_INDEX                = 0;
 const uint32_t UPGRADE_HEIGHT_V2                             = 1;
 const uint32_t UPGRADE_HEIGHT_V3                             = 2;
-const uint32_t UPGRADE_HEIGHT_V4                             = 350000; // Upgrade height for CN-Lite Variant 1 switch.
+const uint32_t UPGRADE_HEIGHT_V4                             = 3; // Upgrade height for CN-Lite Variant 1 switch.
 const uint32_t UPGRADE_HEIGHT_CURRENT                        = UPGRADE_HEIGHT_V4; 
 const unsigned UPGRADE_VOTING_THRESHOLD                      = 90;               // percent
 const uint32_t UPGRADE_VOTING_WINDOW                         = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY;  // blocks
@@ -183,8 +183,8 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by def
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  100;    //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
-const int      P2P_DEFAULT_PORT                              =  11897;
-const int      RPC_DEFAULT_PORT                              =  11898;
+const int      P2P_DEFAULT_PORT                              =  26858;
+const int      RPC_DEFAULT_PORT                              =  26958;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
