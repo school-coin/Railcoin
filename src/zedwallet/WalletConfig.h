@@ -26,7 +26,7 @@ namespace WalletConfig
     const std::string daemonName = "RailCoind";
 
     /* The name to call this wallet */
-    const std::string walletName = "zedwallet";
+    const std::string walletName = "Railwallet";
 
     /* The name of service/walletd, the programmatic rpc interface to a
        wallet */
